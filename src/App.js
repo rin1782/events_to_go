@@ -1,12 +1,50 @@
 import React from 'react';
 import './index.css';
 
-import Home from './components/Home'
+
+function Header(props) {
+  return(
+    <header style={{border: "dotted"}}>
+      <div>
+        <h1>{props.name}</h1>
+        <h3>{props.description}</h3>
+      </div>
+    </header>
+  )
+}
+
+function Main(){
+  return(
+    <section>
+      <ul></ul>
+    </section>
+  )
+}
+
+function Footer(props){
+  return(
+    <footer style={{borderTop: "solid", fontFamily: "monospace", fontSize: "small", textAlign: "right"}}>
+      <p>Creator/Owner: {props.name} -- Copyright: {props.year} </p>
+    </footer>
+  )
+}
+const drinkTypes = [
+  "Liquor",
+  "Wine",
+  "Beer",
+  "Mocktails"
+]
+
+
+
 
 function App() {
-  return (
-    <Home />
-    
+  return(
+    <div className="App">
+      <Header name="Booze Travelers" description="A customizable travel bar"/>
+      <Main  />
+      <Footer year={new Date().getFullYear()} name="Erin Cola" />
+    </div>
   );
 }
 

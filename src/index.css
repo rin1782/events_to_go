@@ -1,9 +1,8 @@
 body {
-  margin: 0;
+  
   background-color: rgb(41, 44, 48);
   font-family:fantasy;
   color:bisque;
-  font-size:large;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
