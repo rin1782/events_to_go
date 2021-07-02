@@ -5,8 +5,11 @@ import './index.css';
 function Header(props) {
   return(
     <header style={{border: "dotted"}}>
+      
       <div>
-        <h1>**{props.name}**<br></br>{props.description}</h1>
+        <h1>**{props.name}**<br></br>
+        {props.description}</h1><br></br>
+        <img src="https://thumbs.dreamstime.com/b/cocktail-sketch-hand-drawing-vector-illustration-102799870.jpg" alt="martini glass" height={100} width={100}/>
       </div>
     </header>
   )
